@@ -80,6 +80,17 @@ nav{
 main{
     padding-top: 6.6vh;
 }
+.dot-main{
+    padding-top: 10vh;
+    background-color: rgb(6, 16, 155);
+}
+.gal-1{
+    display: flex;
+    justify-content: space-around;
+}
+#koron{
+    width: 60px;
+}
 #bac-1{
     position: absolute;
     width: 100%;
@@ -93,7 +104,14 @@ main{
 }
 .bad-1 a{
     position: absolute;
-    
+}
+.bad-2{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+}
+.bad-2 a{
+    position: absolute;
 }
 .ol-content{
 
@@ -102,6 +120,10 @@ main{
     background-color: rgba(43, 31, 31, 0.76);
     border: 1px solid black;
     border-radius: 7px;
+}
+.ol-content-1{
+        margin: 40px;
+        padding: 5px;
 }
 p{
     color: rgb(255, 255, 255);
@@ -130,13 +152,23 @@ h1{
 
 
 @media screen and (max-width: 600px) {
+    main{
+        padding-top: 10vh;
+    }
     #bac-1{
         display: none;
+    }
+    .gal-1{
+        flex-direction: column;
+        align-items: center;
     }
     body{
         background-color: rgb(78, 78, 78);
     }
     .bad-1{
+        height: auto;
+    }
+    .bad-2{
         height: auto;
     }
     .ol-content{
